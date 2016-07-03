@@ -24,8 +24,6 @@ app.use(morgan('dev'));
 // Initialize passport for use
 app.use(passport.initialize());
 
-app.engine('html', require('ejs').renderFile);
-
 var port = 3000;
 
 app.listen(port);
