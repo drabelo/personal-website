@@ -122,11 +122,11 @@ apiRoutes.post('/authenticate', passport.authenticate('ldap'), function(req, res
     });
 });
 
-// Home route. We'll end up changing this to our main front end index later.
-app.get('/', function(req, res) {
-    res.sendfile(__dirname + 'index.html');
-})
-
+// // Home route. We'll end up changing this to our main front end index later.
+// app.get('/', function(req, res) {
+//     res.sendfile(__dirname + 'index.html');
+// })
+//
 
 
 console.log('Your server is running on port ' + port + '.');
