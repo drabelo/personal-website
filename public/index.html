@@ -1,34 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
 <head>
-  <title>Express HTML</title>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Restful Authentication with NodeJS & AngularJS</title>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="partials/login/loginController.js"></script>
+    <script src="partials/dashboard/dashController.js"></script>
+    <script src="JS/ngstorage/ngStorage.min.js"></script>
+    <script src="JS/ng-idle/angular-idle.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
 </head>
+
 <body>
-  <div style="margin:100px;">
-    <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <a class="navbar-brand" href="/">Express HTML</a>
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/about">About</a>
-      </li>
-      <li>
-        <a href="/sitemap">Sitemap</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-    <div class="jumbotron"  style="padding:40px;">
-      <h1>Hello, world!</h1>
-      <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <center>
+    <div id="large-header" class="large-header">
+
+        <canvas id="demo-canvas"></canvas>
+        <h1 class="main-title">
+          <a href="#!home">Dailton Rabelo</a>
+<br>
+<span class="thin">
+        <a href="#!index">About</a>
+        <a href="#!login">Resume</a>
+        <a href="#!dashboard">Projects</a>
+        <a href="#!logout">Contact</a>
+
+<br>
+<br>
+
+    <div class="header glass" ng-view="">
+      //container
     </div>
-  </div>
+
+  </span></h1>
+
+    </div>
+
+    <script src='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+    <script src='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+    <script src='http://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</center>
 </body>
+
 </html>

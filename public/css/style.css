@@ -1,0 +1,118 @@
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	/*overflow-x: hidden;*/
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+
+.main-title {
+	position: absolute;
+	color: #f9f1e9;
+	text-align: center;
+	top: 22%;
+	left: 50%;
+	width: inherit;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+}
+
+.demo-1 .main-title {
+	text-transform: uppercase;
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.demo-1 .main-title {
+		font-size: 3em;
+	}
+}
+
+.glass {
+  position: absolute;
+  padding: 10px 0;
+	font-size: 75%;
+	margin-right: 25%;
+  margin-left: 25%;
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display:block;
+  overflow:auto;
+}
+
+.glass::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.glass .legacy-ie-fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+}
+
+.glass h1 {
+  position: relative;
+  margin: 0;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 100px;
+  font-weight: normal;
+  font-family: "Megrim", sans-serif;
+  line-height: 1;
+  text-align: center;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+
+@media only screen {
+  .glass h1 {
+    -ms-filter: "none";
+  }
+}
+
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
+
+html{
+	background-color: #333;
+}
