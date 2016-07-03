@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	background: #333;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
@@ -13,6 +13,7 @@
 .main-title {
 	position: absolute;
 	color: #f9f1e9;
+	text-align: justify;
 	text-align: center;
 	top: 22%;
 	left: 50%;
