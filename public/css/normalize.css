@@ -3,10 +3,15 @@
 html {
 font-family: 'Roboto', sans-serif;
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
+    max-width:1080px;
 }
 body {
     margin: 0
+}
+
+div{
+  color: white;
 }
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
     display: block
@@ -48,10 +53,10 @@ h1 {
     font-size: 2em;
     margin: 0.67em 0
 }
-mark {
+/*mark {
     background-color: #ff0;
     color: #000
-}
+}*/
 small {
     font-size: 80%
 }

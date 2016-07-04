@@ -15,7 +15,7 @@
 	color: #f9f1e9;
 	text-align: justify;
 	text-align: center;
-	top: 22%;
+	top: 50%;
 	left: 50%;
 	width: inherit;
 	-webkit-transform: translate3d(-50%,-50%,0);
@@ -29,7 +29,7 @@
 }
 
 .main-title .thin {
-	font-weight: 200;
+	font-weight: 100;
 }
 
 @media only screen and (max-width : 768px) {
@@ -39,9 +39,13 @@
 }
 
 .glass {
+	width: 100%
   position: absolute;
-  padding: 10px 0;
-	font-size: 75%;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-weight: 100;
+	font-size: 110%;
 	margin-right: 15%;
   margin-left: 15%;
   border-bottom: 1px solid;
@@ -52,6 +56,8 @@
   display:block;
   overflow:auto;
 }
+
+
 
 .glass::before {
   position: absolute;
@@ -81,7 +87,6 @@
   color: rgba(255, 255, 255, 0.3);
   font-size: 100px;
   font-weight: normal;
-  font-family: "Megrim", sans-serif;
   line-height: 1;
   text-align: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
@@ -119,6 +124,210 @@ a:hover, a:visited, a:link, a:active
     text-decoration: none;
 }
 
+a.active {
+    background-color: #666;
+}
+
 html{
 	background-color: #333;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+		margin-left: 15%;
+		margin-right: 15%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #444;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #111;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+img{
+	width: 100%
+}
+
+
+.grid-container {
+	margin-left: 15%;
+	margin-right: 15%;
+  height: auto;
+  overflow: hidden;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  margin: 0.2%;
+  height: 0px;
+}
+
+.grid-item:hover {
+  transform: scale(0.97);
+  cursor: pointer;
+}
+
+.grid-item:active {
+  transform: scale(0.93);
+  cursor: pointer;
+}
+
+.medium {
+  width: 19.6%;
+  padding-bottom: 19.6%;
+}
+
+.wide {
+  width: 39.6%;
+  padding-bottom: 19.6%;
+}
+
+.large {
+  width: 39.6%;
+  padding-bottom: 39.55%;
+}
+
+.grid-item img {
+  overflow: hidden;
+  width: 105%;
+}
+
+.grid-item .info {
+  overflow: hidden;
+  position: absolute;
+  background-color: rgba(15, 15, 15, 0.9);
+  bottom: 0;
+  height: auto;
+  left: 0;
+  width: 100%;
+  font-size: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.grid-item .show-info {
+  height: 100%;
+}
+
+.grid-item .hide-info {
+  height: 30%;
+  max-height: 60px;
+}
+
+.grid-item .title {
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 1%;
+}
+
+.grid-item .date {
+  padding: 1%;
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+.grid-item .description {
+  margin-top: 15px;
+  font-size: 13px;
+  padding: 1%;
+}
+
+.grid-item button {
+  visibility: collapse;
+  text-align: center;
+  background: #0096a0;
+  color: white;
+  position: absolute;
+  text-decoration: none;
+  border: none;
+  left: 50%;
+  right: 50%;
+  bottom: 25px;
+  margin: -20px -50px;
+  width: 100px;
+  height: 30px;
+  transition: background-color 0.1s;
+  transition: height 0.1s;
+}
+
+.grid-item button:hover {
+  background-color: rgba(30, 30, 30, 100);
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.grid-item button:active {
+  background-color: rgba(20, 20, 20, 100);
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+@media all and (max-width:680px) {
+  .medium {
+    width: 99.3%;
+    padding-bottom: 49.3%;
+    margin-bottom: 1%;
+  }
+  .wide {
+    width: 99.3%;
+    padding-bottom: 49.3%;
+    margin-bottom: 1%;
+  }
+  .large {
+    width: 99.3%;
+    padding-bottom: 49.3%;
+    margin-bottom: 1%;
+  }
 }

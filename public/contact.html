@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/favicon.ico">
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+
+    <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="projects.html">Project</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+    </ul>
+
+</head>
+
+<body>
+
+
+    <div class="header glass" ng-view="">
+      <center>
+      Contact me at <a href="mailto:dailtonrabelo@gmail.com">dailtonrabelo@gmail.com</a>
+    </center>
+    </div>
+
+
+    <script type="text/javascript">
+        function myFunction() {
+            console.log("TOGGLED");
+            document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+    </script>
+
+
+
+</body>
+
+
+
+
+
+</html>
