@@ -4,6 +4,7 @@
 	width: 100%;
 	background: #333;
 	overflow-x: hidden;
+	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
@@ -134,6 +135,7 @@ html{
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
+	padding-left: 0px;
 		margin-left: 15%;
 		margin-right: 15%;
     list-style-type: none;
@@ -165,7 +167,7 @@ ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
-    float: right;
+    float: left;
     display: inline-block;
   }
 }

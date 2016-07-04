@@ -2,10 +2,6 @@
 
 "use strict";
 
-function myFunction() {
-console.log("TOGGLED");
-document.getElementsByClassName("topnav")[5].classList.toggle("responsive");
-}
 
 $(document).ready(function () {
     var zindex = 10;
