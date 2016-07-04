@@ -7,18 +7,18 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="/favicon.ico">
+  <title>Dailton Rabelo</title>
 
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="js/nav.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
 
     <ul class="topnav">
         <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="projects.html">Project</a></li>
-        <li><a class="active" href="resume.html">Resume</a></li>
+        <li><a class="active" href="projects.html">Project</a></li>
+        <li><a href="resume.html">Resume</a></li>
         <li><a href="about.html">About</a></li>
         <li class="icon">
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
@@ -29,72 +29,65 @@
 
 <body>
 
-  <div class="grid-container">
+  <canvas id="demo-canvas"></canvas>
+
+  <div class="grid-container" style="z-index:1;">
 
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
+      <div class="grid-item wide floatLeft">
+        <img src="http://tf3dm.com/imgd/l48919-spaceship-98075.jpg" />
+        <div class="info hide-info">
+          <div class="title">Spaceship</div>
+          <div class="date">April 23 2012</div>
+          <div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
+          <button>Read More</button>
+        </div>
+      </div>
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
+        <div class="grid-item wide floatLeft">
+          <img src="http://tf3dm.com/imgd/l48919-spaceship-98075.jpg" />
+          <div class="info hide-info">
+            <div class="title">Spaceship</div>
+            <div class="date">April 23 2012</div>
+            <div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
+            <button>Read More</button>
+          </div>
+        </div>
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
 
-<div class="grid-item medium floatLeft">
-<img src="https://cdn.designmaz.net/wp-content/uploads/2014/01/Dark-UI-Kit.jpg" />
-<div class="info hide-info">
-<div class="title">Flat Website UI Template</div>
-<div class="date">&emsp;</div>
-<div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
-<button>Read More</button>
-</div>
-</div>
+
+          <div class="grid-item wide floatLeft">
+            <img src="http://tf3dm.com/imgd/l48919-spaceship-98075.jpg" />
+            <div class="info hide-info">
+              <div class="title">Spaceship</div>
+              <div class="date">April 23 2012</div>
+              <div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
+              <button>Read More</button>
+            </div>
+          </div>
+
+
+
+            <div class="grid-item wide floatLeft">
+              <img src="http://tf3dm.com/imgd/l48919-spaceship-98075.jpg" />
+              <div class="info hide-info">
+                <div class="title">Spaceship</div>
+                <div class="date">April 23 2012</div>
+                <div class="description">This grid is an attempt to make something nice that works on touch devices. Ignoring hover states when they're not available etc. </div>
+                <button>Read More</button>
+              </div>
+            </div>
+
+
+
 
 
 
 </div>
+
+
 
 
     <script type="text/javascript">
@@ -102,6 +95,9 @@
             document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
         }
     </script>
+
+    <script src="JS/index.js"></script>
+
 
 
 

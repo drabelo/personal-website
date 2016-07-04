@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="shortcut icon" href="/favicon.ico">
+  <title>Dailton Rabelo</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-
 
     <ul class="topnav">
       <li><a href="index.html">Home</a></li>
@@ -24,11 +24,18 @@
         </li>
     </ul>
 
+
+
 </head>
 
 <body>
 
-    <div class="header glass" ng-view="">
+
+
+
+  <canvas id="demo-canvas"></canvas>
+
+    <div class="glass" style="z-index:1;">
         Hello, my name is Dailton Rabelo. I study computer science at the University of Massachusetts in Amherst. I spend my free time interning at different software companies. I started at computersupport.com and now have been at IBM for two summers.
         <br>
         <br> I enjoy working on projects in the mobile and web space. I can be found at GitHub and Linkedin.
@@ -37,6 +44,8 @@
 
     </div>
 
+
+
     <script type="text/javascript">
       function myFunction() {
       console.log("TOGGLED");
@@ -44,6 +53,11 @@
       }
     </script>
 
+
+    <script src='JS/EasePack.min.js'></script>
+    <script src='JS/rAF.js'></script>
+    <script src='JS/TweenLite.min.js'></script>
+    <script src="JS/index.js"></script>
 
 
 </body>
